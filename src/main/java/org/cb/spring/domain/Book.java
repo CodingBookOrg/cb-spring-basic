@@ -1,6 +1,7 @@
 package org.cb.spring.domain;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -22,10 +23,10 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn, Set<Author> authors) {
+    public Book(String title, String isbn) {
         this.title = title;
         this.isbn = isbn;
-        this.authors = authors;
+        this.authors = new HashSet<>();
     }
 
     public Long getId() {
