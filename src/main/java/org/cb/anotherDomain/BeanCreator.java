@@ -1,9 +1,9 @@
 package org.cb.anotherDomain;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
+@Configuration
 public class BeanCreator {
     @Bean
     public Student getStudent() {
